@@ -16,6 +16,7 @@
 		AD4AB459229D1C5D00F08273 /* ZJToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB458229D1C5D00F08273 /* ZJToolTests.m */; };
 		AD4AB464229D1C5D00F08273 /* ZJToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB463229D1C5D00F08273 /* ZJToolUITests.m */; };
 		AD4AB474229D1D7000F08273 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB473229D1D7000F08273 /* UIView+Positioning.m */; };
+		AD69084E22A129E900860779 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = AD69084D22A129E900860779 /* UIView+Toast.m */; };
 		AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD698113229E207400435E03 /* UIColor+ZJExtension.m */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,8 @@
 		AD4AB465229D1C5D00F08273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4AB472229D1D7000F08273 /* UIView+Positioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
 		AD4AB473229D1D7000F08273 /* UIView+Positioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
+		AD69084C22A129E900860779 /* UIView+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		AD69084D22A129E900860779 /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		AD698112229E207400435E03 /* UIColor+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZJExtension.h"; sourceTree = "<group>"; };
 		AD698113229E207400435E03 /* UIColor+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZJExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +149,8 @@
 				AD4AB473229D1D7000F08273 /* UIView+Positioning.m */,
 				AD698112229E207400435E03 /* UIColor+ZJExtension.h */,
 				AD698113229E207400435E03 /* UIColor+ZJExtension.m */,
+				AD69084C22A129E900860779 /* UIView+Toast.h */,
+				AD69084D22A129E900860779 /* UIView+Toast.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD69084E22A129E900860779 /* UIView+Toast.m in Sources */,
 				AD4AB444229D1C5B00F08273 /* ViewController.m in Sources */,
 				AD4AB44F229D1C5C00F08273 /* main.m in Sources */,
 				AD4AB474229D1D7000F08273 /* UIView+Positioning.m in Sources */,
