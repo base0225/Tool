@@ -31,5 +31,14 @@
   
   
 2、UILable+ZJExtension:
-  
+   
+     (1) + (UIColor *)zj_colorWithHex:(unsigned int)hex;
+     (2) + (UIColor *)zj_colorWithHex:(unsigned int)hex alpha:(CGFloat)alpha;
+     (3) + (UIColor *)zj_colorwithHexString:(NSString *)hexString;
+     (4) + (UIColor *)zj_colorwithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
+     (5) + (UIColor *)zj_randomColor;
+     (6) + (UIColor *)zj_gradientColorInageFromColors:(NSArray *)colors gradientType:(ZJGradietType)gradientType imgSize:                (CGSize)imgSize;
+     (7) - (UIImage *)zj_pureColorImage;
+     (8) + (UIColor *)zj_modifyColorElement:(UIColor *)originColor element:(NSDictionary *)element;
+     (9) + (UIColor *)zj_averageColors:(NSArray<UIColor *> *)colors;
   
