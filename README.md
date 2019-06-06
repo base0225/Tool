@@ -18,7 +18,7 @@
      (13)- (void)centerToParent;   
   
   
-2、UILable+ZJExtension:
+2、UIColor+ZJExtension:
    
      (1) + (UIColor *)zj_colorWithHex:(unsigned int)hex;
      (2) + (UIColor *)zj_colorWithHex:(unsigned int)hex alpha:(CGFloat)alpha;
