@@ -18,6 +18,7 @@
 		AD4AB474229D1D7000F08273 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB473229D1D7000F08273 /* UIView+Positioning.m */; };
 		AD69084E22A129E900860779 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = AD69084D22A129E900860779 /* UIView+Toast.m */; };
 		AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD698113229E207400435E03 /* UIColor+ZJExtension.m */; };
+		AD75275F22AE051E00FB8021 /* UIImage+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75275E22AE051E00FB8021 /* UIImage+ZJExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		AD69084D22A129E900860779 /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		AD698112229E207400435E03 /* UIColor+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZJExtension.h"; sourceTree = "<group>"; };
 		AD698113229E207400435E03 /* UIColor+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZJExtension.m"; sourceTree = "<group>"; };
+		AD75275D22AE051E00FB8021 /* UIImage+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZJExtension.h"; sourceTree = "<group>"; };
+		AD75275E22AE051E00FB8021 /* UIImage+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZJExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 			children = (
 				AD4AB472229D1D7000F08273 /* UIView+Positioning.h */,
 				AD4AB473229D1D7000F08273 /* UIView+Positioning.m */,
+				AD75275D22AE051E00FB8021 /* UIImage+ZJExtension.h */,
+				AD75275E22AE051E00FB8021 /* UIImage+ZJExtension.m */,
 				AD698112229E207400435E03 /* UIColor+ZJExtension.h */,
 				AD698113229E207400435E03 /* UIColor+ZJExtension.m */,
 				AD69084C22A129E900860779 /* UIView+Toast.h */,
@@ -288,6 +293,7 @@
 				AD69084E22A129E900860779 /* UIView+Toast.m in Sources */,
 				AD4AB444229D1C5B00F08273 /* ViewController.m in Sources */,
 				AD4AB44F229D1C5C00F08273 /* main.m in Sources */,
+				AD75275F22AE051E00FB8021 /* UIImage+ZJExtension.m in Sources */,
 				AD4AB474229D1D7000F08273 /* UIView+Positioning.m in Sources */,
 				AD4AB441229D1C5B00F08273 /* AppDelegate.m in Sources */,
 				AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */,
