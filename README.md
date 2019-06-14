@@ -61,4 +61,28 @@
      (4)- (CGFloat)zj_calculateHeightByWidth:(CGFloat)width text:(NSString *)text;
      (5)- (void)zj_autoResetWidth;
      
+  6、UIAlertView+ZJExtension (注：在iOS8 废弃掉了，但是还可以使用。)
+    
+    (1)+ (UIAlertView *)zj_showAlertViewWithTitle:(NSString *)title
+                                   message:(NSString *)message
+                         cancelButtonTitle:(NSString *)cancelButtonTitle
+                          otherButtonTitle:(NSString *)otherButton;
+    (2)+ (UIAlertView *)zj_showAlertViewWithTitle:(NSString *)title
+                                   message:(NSString *)message
+                         cancelButtonTitle:(NSString *)cancelButtonTitle
+                          otherButtonTitle:(NSString *)otherButton
+                                  onCancel:(void (^)(void))cancelled
+                                 onDismiss:(void (^)(NSInteger buttonIndex))dismissed;
+    (3)+ (UIAlertView *)zj_showAlertViewWithTitle:(NSString *)title
+                                   message:(NSString *)message
+                         cancelButtonTitle:(NSString *)cancelButtonTitle
+                         otherButtonTitles:(NSArray *)otherButtons;
+    (4)+ (UIAlertView *)zj_showAlertViewWithTitle:(NSString *)title
+                                   message:(NSString *)message
+                         cancelButtonTitle:(NSString *)cancelButtonTitle
+                         otherButtonTitles:(NSArray *)otherButtons
+                                  onCancel:(void (^)(void))cancelled
+                                 onDismiss:(void (^)(NSInteger buttonIndex))dismissed;                     
+   
+     
      
