@@ -20,6 +20,7 @@
 		AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD698113229E207400435E03 /* UIColor+ZJExtension.m */; };
 		AD75275F22AE051E00FB8021 /* UIImage+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75275E22AE051E00FB8021 /* UIImage+ZJExtension.m */; };
 		AD923C6E22B33516006E7CA6 /* UILabel+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923C6D22B33516006E7CA6 /* UILabel+ZJExtension.m */; };
+		AD923C7122B3379C006E7CA6 /* UIAlertView+ZJExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		AD75275E22AE051E00FB8021 /* UIImage+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZJExtension.m"; sourceTree = "<group>"; };
 		AD923C6C22B33516006E7CA6 /* UILabel+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+ZJExtension.h"; sourceTree = "<group>"; };
 		AD923C6D22B33516006E7CA6 /* UILabel+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ZJExtension.m"; sourceTree = "<group>"; };
+		AD923C6F22B3379C006E7CA6 /* UIAlertView+ZJExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ZJExtensions.h"; sourceTree = "<group>"; };
+		AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ZJExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				AD69084D22A129E900860779 /* UIView+Toast.m */,
 				AD923C6C22B33516006E7CA6 /* UILabel+ZJExtension.h */,
 				AD923C6D22B33516006E7CA6 /* UILabel+ZJExtension.m */,
+				AD923C6F22B3379C006E7CA6 /* UIAlertView+ZJExtensions.h */,
+				AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				AD4AB474229D1D7000F08273 /* UIView+Positioning.m in Sources */,
 				AD4AB441229D1C5B00F08273 /* AppDelegate.m in Sources */,
 				AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */,
+				AD923C7122B3379C006E7CA6 /* UIAlertView+ZJExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
