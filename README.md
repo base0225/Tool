@@ -41,4 +41,24 @@
      (7)- (void)showToast:(UIView *)toast;
      (8)- (void)showToast:(UIView *)toast duration:(CGFloat)interval position:(id)point;
      
+  4、UIImage+ZJExtension
   
+     (1)- (UIImage *)zj_slicedImageWithRect:(CGRect)rect;
+     (2)- (UIImage *)zj_scaledImageWithSize:(CGSize)size;
+     (3)- (UIImage*)zj_scaleAndCropImageWithSize:(CGSize)targetSize;
+     (4)- (UIImage *)zj_imageSizeConstraintToByteLength:(long long)length;
+     (5)- (UIImage *)zj_fixOrientation;
+     (6)+ (UIImage *)zj_circleImage:(UIImage *)image;
+     (7)+ (UIImage *)tn_circleImage:(UIImage *)image borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
+     (8)+ (UIImage *)zj_imageCorner:(UIImage *)image borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor     
+        cornerRadius:(CGFloat)cornerRadius;
+        
+  5、UILable+ZJExtension
+  
+     (1)- (void)zj_autoResetHeightByWidth:(CGFloat)restWidth text:(NSString *)text;
+     (2)- (void)zj_autoResetHeightByWidth:(CGFloat)restWidth text:(NSString *)text miniHeight:(CGFloat)miniheight;
+     (3)- (void)zj_autoResetHeightByWidth:(CGFloat)restWidth text:(NSString *)text oneLineHeight:(CGFloat )height;
+     (4)- (CGFloat)zj_calculateHeightByWidth:(CGFloat)width text:(NSString *)text;
+     (5)- (void)zj_autoResetWidth;
+     
+     
