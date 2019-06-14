@@ -53,5 +53,12 @@
      (8)+ (UIImage *)zj_imageCorner:(UIImage *)image borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor     
         cornerRadius:(CGFloat)cornerRadius;
         
-        
-        
+  5、UILable+ZJExtension
+  
+     (1)- (void)zj_autoResetHeightByWidth:(CGFloat)restWidth text:(NSString *)text;
+     (2)- (void)zj_autoResetHeightByWidth:(CGFloat)restWidth text:(NSString *)text miniHeight:(CGFloat)miniheight;
+     (3)- (void)zj_autoResetHeightByWidth:(CGFloat)restWidth text:(NSString *)text oneLineHeight:(CGFloat )height;
+     (4)- (CGFloat)zj_calculateHeightByWidth:(CGFloat)width text:(NSString *)text;
+     (5)- (void)zj_autoResetWidth;
+     
+     
