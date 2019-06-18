@@ -84,5 +84,11 @@
                                   onCancel:(void (^)(void))cancelled
                                  onDismiss:(void (^)(NSInteger buttonIndex))dismissed;                     
    
-     
+  
+   7、NSArray + ZJExtension
+    
+    (1)- (id)zj_objectAtIndex:(NSUInteger)index;
+    (2)+ (id)zj_arrayWithObjects:(const id _Nonnull [])objects count:(NSUInteger)cnt;
+    (3)- (id)safeObjectAtIndex:(NSUInteger)index;
+    (4)+ (BOOL)isNilorEmpty:(NSArray*)array;
      
