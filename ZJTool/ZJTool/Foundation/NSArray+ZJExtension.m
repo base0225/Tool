@@ -30,8 +30,6 @@
 {
     if (index >= self.count)
     {
-        NSStringFromClass([self class]);
-        NSStringFromSelector(_cmd);
         return nil;
     }
     
@@ -51,8 +49,6 @@
         }
         else
         {
-            NSStringFromClass([self class]);
-            NSStringFromSelector(_cmd);
         }
     }
     
