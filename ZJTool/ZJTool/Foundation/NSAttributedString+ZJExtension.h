@@ -69,6 +69,102 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize fitRange:(NSRange *)fitRange;
 
+@end
+
+
+
+@interface NSMutableAttributedString (ZJExtension)
+
+/**
+ *  设置字体
+ *
+ *  @param font 字体类型
+ */
+- (void)zj_setFont:(UIFont *)font;
+/**
+ *  设置字体，并确定字体适用范围
+ *
+ *  @param font  字体
+ *  @param range 范围
+ */
+- (void)zj_setFont:(UIFont *)font range:(NSRange)range;
+/**
+ *  设置字体，通过字体名称及字体大小
+ *
+ *  @param fontName 字体名称
+ *  @param size     字体大小
+ */
+- (void)zj_setFontName:(NSString *)fontName size:(CGFloat)size;
+/**
+ *  设置字体，通过字体名称及字体大小,并设置字体适用范围
+ *
+ *  @param fontName 字体名称
+ *  @param size     字体大小
+ *  @param range    适用范围
+ */
+- (void)zj_setFontName:(NSString *)fontName size:(CGFloat)size range:(NSRange)range;
+/**
+ *  设置字体颜色
+ *
+ *  @param color 颜色
+ */
+- (void)zj_setTextColor:(UIColor *)color;
+/**
+ *  设置字体颜色，并确定适用范围
+ *
+ *  @param color 颜色
+ *  @param range 适用范围
+ */
+- (void)zj_setTextColor:(UIColor*)color range:(NSRange)range;
+
+/**
+ *  设置下划线
+ *
+ *  @param style 下划线类型
+ */
+- (void)zj_setTextStrikethroughStyle:(NSUnderlineStyle)style;
+
+/**
+ *  设置下划线, 并确定适用范围
+ *
+ *  @param style 下划线类型
+ *  @param range 适用范围
+ */
+- (void)zj_setTextStrikethroughStyle:(NSUnderlineStyle)style range:(NSRange)range;
+/**
+ *  设置下划线类型
+ *
+ *  @param style 下划线类型
+ */
+- (void)zj_setTextUnderLineStyle:(NSUnderlineStyle)style;
+/**
+ *  设置下划线类型，并设置适用范围
+ *
+ *  @param style 下划线类型
+ *  @param range 适用范围
+ */
+- (void)zj_setTextUnderLineStyle:(NSUnderlineStyle)style range:(NSRange)range;
+/**
+ *  设置段落样式
+ *
+ *  @param block 回传样式信息
+ */
+- (void)zj_modifyParagraphStylesWithBlock:(void (^)(NSMutableParagraphStyle *paragraphStyle))block;
+
+/**
+ *  设置段落样式
+ *
+ *  @param paragraphStyle 样式
+ */
+- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle;
+
+/**
+ *  设置段落样式
+ *
+ *  @param paragraphStyle 样式
+ *  @param range          范围
+ */
+- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle range:(NSRange)range;
 
 @end
 

@@ -9,6 +9,7 @@
 #import "NSAttributedString+ZJExtension.h"
 #import <CoreText/CoreText.h>
 
+
 @implementation NSAttributedString (ZJExtension)
 
 + (instancetype)zj_attributedStringWithString:(NSString*)string
@@ -70,5 +71,102 @@
     }
     return sz;
 }
+
+@end
+
+
+@implementation NSMutableAttributedString (EasyToUse)
+
+ - (void)zj_setFont:(UIFont*)font
+{
+    [self zj_setFontName:font.fontName size:font.pointSize];
+}
+
+- (void)zj_setFontName:(NSString*)fontName size:(CGFloat)size
+{
+    [self zj_setFontName:fontName size:size range:NSMakeRange(0,[self length])];
+}
+
+- (void)zj_setFontName:(NSString*)fontName size:(CGFloat)size range:(NSRange)range
+{
+    [self removeAttribute:NSFontAttributeName range:range];
+    [self addAttribute:NSFontAttributeName value:[UIFont fontWithName:fontName size:size] range:range];
+}
+
+- (void)zj_setTextColor:(UIColor*)color
+{
+    [self zj_setTextColor:color range:NSMakeRange(0,[self length])];
+}
+
+- (void)zj_setTextColor:(UIColor*)color range:(NSRange)range
+{
+    [self removeAttribute:NSForegroundColorAttributeName range:range];
+    [self addAttribute:NSForegroundColorAttributeName value:color range:range];
+}
+
+- (void)zj_setTextStrikethroughStyle:(NSUnderlineStyle)style
+{
+    [self zj_setTextStrikethroughStyle:style range:NSMakeRange(0, self.length)];
+}
+
+- (void)zj_setTextStrikethroughStyle:(NSUnderlineStyle)style range:(NSRange)range
+{
+    [self removeAttribute:NSStrikethroughStyleAttributeName range:range];
+    [self addAttribute:NSStrikethroughStyleAttributeName value:@(style) range:range];
+}
+
+- (void)zj_setTextUnderLineStyle:(NSUnderlineStyle)style
+{
+    [self zj_setTextUnderLineStyle:style range:NSMakeRange(0, self.length)];
+}
+
+- (void)zj_setTextUnderLineStyle:(NSUnderlineStyle)style range:(NSRange)range
+{
+    [self removeAttribute:NSUnderlineStyleAttributeName range:range];
+    [self addAttribute:NSUnderlineStyleAttributeName value:@(style) range:range];
+}
+
+- (void)zj_modifyParagraphStylesWithBlock:(void (^)(NSMutableParagraphStyle *paragraphStyle))block
+{
+    [self zj_modifyParagraphStylesInRange:NSMakeRange(0, self.length) withBlock:block];
+}
+
+- (void)zj_modifyParagraphStylesInRange:(NSRange)range withBlock:(void (^)(NSMutableParagraphStyle *))block
+{
+    NSParameterAssert(block != nil);
+    
+    NSRangePointer rangePtr = &range;
+    NSUInteger loc = range.location;
+    [self beginEditing];
+    while (NSLocationInRange(loc, range))
+    {
+        NSParagraphStyle *paraStyle = [self attribute:NSParagraphStyleAttributeName
+                                              atIndex:loc
+                                longestEffectiveRange:rangePtr
+                                              inRange:range];
+        if (!paraStyle)
+        {
+            paraStyle = [NSParagraphStyle defaultParagraphStyle];
+        }
+        NSMutableParagraphStyle *mutableParaStyle = [paraStyle mutableCopy];
+        block(mutableParaStyle);
+        [self zj_setParagraphStyle:mutableParaStyle range:*rangePtr];
+        
+        loc = NSMaxRange(*rangePtr);
+    }
+    [self endEditing];
+}
+
+- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle
+{
+    [self zj_setParagraphStyle:paragraphStyle range:NSMakeRange(0, self.length)];
+}
+
+- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle range:(NSRange)range
+{
+    [self removeAttribute:NSParagraphStyleAttributeName range:range];
+    [self addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range];
+}
+
 
 @end
