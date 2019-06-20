@@ -91,4 +91,13 @@
     (2)+ (id)zj_arrayWithObjects:(const id _Nonnull [])objects count:(NSUInteger)cnt;
     (3)- (id)safeObjectAtIndex:(NSUInteger)index;
     (4)+ (BOOL)isNilorEmpty:(NSArray*)array;
+    
+   8、NSAttributedString + ZJExtension
+   
+    (1)+ (instancetype)zj_attributedStringWithString:(NSString *)string;
+    (2)+ (instancetype)zj_attributedStringWithAttributedString:(NSAttributedString *)attrStr;
+    (3)- (instancetype)zj_initWithString:(NSString *)str;
+    (4)- (instancetype)zj_initWithString:(NSString *)str attributes:(NSDictionary<NSString *, id> *)attrs;
+    (5)- (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize;
+    (6)- (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize fitRange:(NSRange *)fitRange;
      
