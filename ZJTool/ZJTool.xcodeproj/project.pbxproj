@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4507F522BCBA3B00DAD5EA /* NSData+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4507F422BCBA3B00DAD5EA /* NSData+ZJExtension.m */; };
 		AD4AB441229D1C5B00F08273 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB440229D1C5B00F08273 /* AppDelegate.m */; };
 		AD4AB444229D1C5B00F08273 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB443229D1C5B00F08273 /* ViewController.m */; };
 		AD4AB447229D1C5B00F08273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4AB445229D1C5B00F08273 /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD4507F322BCBA3B00DAD5EA /* NSData+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ZJExtension.h"; sourceTree = "<group>"; };
+		AD4507F422BCBA3B00DAD5EA /* NSData+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZJExtension.m"; sourceTree = "<group>"; };
 		AD4AB43C229D1C5B00F08273 /* ZJTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4AB43F229D1C5B00F08273 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD4AB440229D1C5B00F08273 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				ADA2613122B8E21400D65FF9 /* NSArray+ZJExtension.m */,
 				AD7094EC22BA2F05009F4FA2 /* NSAttributedString+ZJExtension.h */,
 				AD7094ED22BA2F05009F4FA2 /* NSAttributedString+ZJExtension.m */,
+				AD4507F322BCBA3B00DAD5EA /* NSData+ZJExtension.h */,
+				AD4507F422BCBA3B00DAD5EA /* NSData+ZJExtension.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				AD4AB474229D1D7000F08273 /* UIView+Positioning.m in Sources */,
 				AD4AB441229D1C5B00F08273 /* AppDelegate.m in Sources */,
 				AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */,
+				AD4507F522BCBA3B00DAD5EA /* NSData+ZJExtension.m in Sources */,
 				AD923C7122B3379C006E7CA6 /* UIAlertView+ZJExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
