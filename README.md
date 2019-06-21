@@ -100,4 +100,20 @@
     (4)- (instancetype)zj_initWithString:(NSString *)str attributes:(NSDictionary<NSString *, id> *)attrs;
     (5)- (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize;
     (6)- (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize fitRange:(NSRange *)fitRange;
+  
+  9、NSMutableString + ZJExtension
+  
+    (1)- (void)zj_setFont:(UIFont *)font;
+    (2)- (void)zj_setFont:(UIFont *)font range:(NSRange)range;
+    (3)- (void)zj_setFontName:(NSString *)fontName size:(CGFloat)size;
+    (4)- (void)zj_setFontName:(NSString *)fontName size:(CGFloat)size range:(NSRange)range;
+    (5)- (void)zj_setTextColor:(UIColor *)color;
+    (6)- (void)zj_setTextColor:(UIColor*)color range:(NSRange)range;
+    (7)- (void)zj_setTextStrikethroughStyle:(NSUnderlineStyle)style;
+    (8)- (void)zj_setTextStrikethroughStyle:(NSUnderlineStyle)style range:(NSRange)range;
+    (9)- (void)zj_setTextUnderLineStyle:(NSUnderlineStyle)style;
+    (10)- (void)zj_setTextUnderLineStyle:(NSUnderlineStyle)style range:(NSRange)range;
+    (11)- (void)zj_modifyParagraphStylesWithBlock:(void (^)(NSMutableParagraphStyle *paragraphStyle))block;
+    (12)- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle;
+    (13)- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle range:(NSRange)range;
      
