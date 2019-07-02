@@ -115,5 +115,12 @@
     (10)- (void)zj_setTextUnderLineStyle:(NSUnderlineStyle)style range:(NSRange)range;
     (11)- (void)zj_modifyParagraphStylesWithBlock:(void (^)(NSMutableParagraphStyle *paragraphStyle))block;
     (12)- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle;
-    (13)- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle range:(NSRange)range;
+    (13)- (void)zj_setParagraphStyle:(NSParagraphStyle *)paragraphStyle range:(NSRange)range;‘
+    (14)+ (instancetype)zj_attributedStringWithString:(NSString *)string;
+    (15)+ (instancetype)zj_attributedStringWithAttributedString:(NSAttributedString *)attrStr;
+    (16)- (instancetype)zj_initWithString:(NSString *)str;
+    (17)- (instancetype)zj_initWithString:(NSString *)str attributes:(NSDictionary<NSString *, id> *)attrs;
+    (18)- (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize;
+    (19)- (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize fitRange:(NSRange *)fitRange;
+    
      
