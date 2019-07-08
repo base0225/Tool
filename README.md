@@ -123,4 +123,14 @@
     (18)- (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize;
     (19)- (CGSize)zj_sizeConstrainedToSize:(CGSize)maxSize fitRange:(NSRange *)fitRange;
     
+  10、NSString + ZJHtml
+  
+    (1)+ (NSString *)zj_planTextWithHtml:(NSString *)html;
+    (2)+ (NSString *)zj_planTextAndLineFeedWithHtml:(NSString *)html;
+ 
+  11、NSTimer + ZJExtension
+  
+    (1)- (void)pauseTimer;
+    (2)- (void)resumeTimer;
+    (3)- (void)resumeTimerAfterTimeInterval:(NSTimeInterval)interval;
      
