@@ -134,3 +134,18 @@
     (2)- (void)resumeTimer;
     (3)- (void)resumeTimerAfterTimeInterval:(NSTimeInterval)interval;
      
+  12、NSString + ZJExtension
+  
+    (1)+ (BOOL)isNilOrEmpty:(NSString *)str;
+    (2)- (BOOL)isEmpty;
+    (3)- (BOOL)isEmptyIgnoringWhitespace:(BOOL)ignoreWhitespace;
+    (4)- (NSString *)stringByTrimmingWhitespace;
+    (5)- (NSString *)MD5Hash;
+    (6)- (NSString *)SHA1Hash;
+    (7)- (NSString *)MD5Hash32bit;
+    (8)- (NSInteger)countWord;
+    (9)- (NSInteger)convertToInt:(NSString*)strtemp;
+    (10)- (void)trimCharactersInSet:(NSCharacterSet *)aCharacterSet;
+    
+十三、增加通用宏定义（系统版本、颜色、字号）、尺寸宏定义    
+    
