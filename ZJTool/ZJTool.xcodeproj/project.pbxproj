@@ -87,6 +87,8 @@
 		AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ZJExtensions.m"; sourceTree = "<group>"; };
 		ADA2613022B8E21400D65FF9 /* NSArray+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZJExtension.h"; sourceTree = "<group>"; };
 		ADA2613122B8E21400D65FF9 /* NSArray+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZJExtension.m"; sourceTree = "<group>"; };
+		ADB3B8E222D5DBC600037C78 /* ZJ_UtilsMacro_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_UtilsMacro_h.h; sourceTree = "<group>"; };
+		ADB3B8E422D5DE6700037C78 /* ZJ_Dimens_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_Dimens_h.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,8 @@
 		AD4AB43E229D1C5B00F08273 /* ZJTool */ = {
 			isa = PBXGroup;
 			children = (
+				ADB3B8E422D5DE6700037C78 /* ZJ_Dimens_h.h */,
+				ADB3B8E222D5DBC600037C78 /* ZJ_UtilsMacro_h.h */,
 				ADA2612F22B8E1E000D65FF9 /* Foundation */,
 				AD4AB471229D1D3900F08273 /* UIKit */,
 				AD4AB43F229D1C5B00F08273 /* AppDelegate.h */,

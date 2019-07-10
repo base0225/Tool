@@ -8,12 +8,14 @@
 
 #import "NSTimer+ZJExtension.h"
 
+
 @implementation NSTimer (ZJExtension)
 
 -(void)pauseTimer
 {
     if (![self isValid]) {
         return ;
+        
     }
     [self setFireDate:[NSDate distantFuture]];
 }
