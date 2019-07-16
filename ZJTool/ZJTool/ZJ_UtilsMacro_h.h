@@ -26,7 +26,7 @@
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
-#define HEXCOLOR(hexColorValue) [UIColor tn_colorWithHex:hexColorValue]
+#define HEXCOLOR(hexColorValue) [UIColor zj_colorWithHex:hexColorValue]
 
 // 常用颜色
 #define ZJ_COLOR_GREEN HEXCOLOR(0x33bd61)

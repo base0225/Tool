@@ -27,6 +27,7 @@
 		AD923C6E22B33516006E7CA6 /* UILabel+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923C6D22B33516006E7CA6 /* UILabel+ZJExtension.m */; };
 		AD923C7122B3379C006E7CA6 /* UIAlertView+ZJExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */; };
 		ADA2613222B8E21400D65FF9 /* NSArray+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA2613122B8E21400D65FF9 /* NSArray+ZJExtension.m */; };
+		ADDEFB1622DDB37800316590 /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		ADA2613122B8E21400D65FF9 /* NSArray+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZJExtension.m"; sourceTree = "<group>"; };
 		ADB3B8E222D5DBC600037C78 /* ZJ_UtilsMacro_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_UtilsMacro_h.h; sourceTree = "<group>"; };
 		ADB3B8E422D5DE6700037C78 /* ZJ_Dimens_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_Dimens_h.h; sourceTree = "<group>"; };
+		ADDEFB1422DDB37800316590 /* XTOnePixelLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTOnePixelLine.h; sourceTree = "<group>"; };
+		ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTOnePixelLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				AD923C6D22B33516006E7CA6 /* UILabel+ZJExtension.m */,
 				AD923C6F22B3379C006E7CA6 /* UIAlertView+ZJExtensions.h */,
 				AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */,
+				ADDEFB1422DDB37800316590 /* XTOnePixelLine.h */,
+				ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				ADA2613222B8E21400D65FF9 /* NSArray+ZJExtension.m in Sources */,
 				AD69084E22A129E900860779 /* UIView+Toast.m in Sources */,
 				AD4AB444229D1C5B00F08273 /* ViewController.m in Sources */,
+				ADDEFB1622DDB37800316590 /* XTOnePixelLine.m in Sources */,
 				AD923C6E22B33516006E7CA6 /* UILabel+ZJExtension.m in Sources */,
 				AD4AB44F229D1C5C00F08273 /* main.m in Sources */,
 				AD75275F22AE051E00FB8021 /* UIImage+ZJExtension.m in Sources */,
