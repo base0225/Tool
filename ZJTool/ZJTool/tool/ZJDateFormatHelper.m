@@ -33,41 +33,41 @@
 }
 
 // NSDate格式转化为日期字符串
-- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(TNDateFormatType)dataFormatType
+- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(ZJDateFormatType)dataFormatType
 {
-    return [self stringOfDate:date dateFormatType:dataFormatType calendarType:TNCalendarFormatTypeGregorian];
+    return [self stringOfDate:date dateFormatType:dataFormatType calendarType:ZJCalendarFormatTypeGregorian];
 }
 
-- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(TNDateFormatType)dataFormatType calendarType:(TNCalendarFormatType)calendarType
+- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(ZJDateFormatType)dataFormatType calendarType:(ZJCalendarFormatType)calendarType
 {
     NSCalendar *calendar = [self calendarWithType:calendarType];
     NSString *dateString;
     switch (dataFormatType) {
-        case TNDateFormatTypeDefault:
+        case ZJDateFormatTypeDefault:
         {
             [self.defaultTypeDateFormatter setCalendar:calendar];
             dateString = [self.defaultTypeDateFormatter stringFromDate:date];
         }
             break;
-        case TNDateFormatTypeNum:
+        case ZJDateFormatTypeNum:
         {
             [self.numTypeDateFormatter setCalendar:calendar];
             dateString = [self.numTypeDateFormatter stringFromDate:date];
         }
             break;
-        case TNDateFormatTATimeStamp:
+        case ZJDateFormatTATimeStamp:
         {
             [self.taTimeStrampDateFormatter setCalendar:calendar];
             dateString = [self.taTimeStrampDateFormatter stringFromDate:date];
         }
             break;
-        case TNDateFormatWeek:
+        case ZJDateFormatWeek:
         {
             [self.weekDateFormatter setCalendar:calendar];
             dateString = [self.weekDateFormatter stringFromDate:date];
         }
             break;
-        case TNDateFormatBenchmark:
+        case ZJDateFormatBenchmark:
         {
             [self.benchmarkFormatter setCalendar:calendar];
             dateString = [self.benchmarkFormatter stringFromDate:date];
@@ -81,41 +81,41 @@
     
 }
 // 日期字符串转换为NSDate
-- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(TNDateFormatType)dataFormatType
+- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(ZJDateFormatType)dataFormatType
 {
-    return [self dateFromString:dateString dateFormatType:dataFormatType calendarType:TNCalendarFormatTypeGregorian];
+    return [self dateFromString:dateString dateFormatType:dataFormatType calendarType:ZJCalendarFormatTypeGregorian];
 }
 
-- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(TNDateFormatType)dataFormatType calendarType:(TNCalendarFormatType)calendarType
+- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(ZJDateFormatType)dataFormatType calendarType:(ZJCalendarFormatType)calendarType
 {
     NSCalendar *calendar = [self calendarWithType:calendarType];
     NSDate *date;
     switch (dataFormatType) {
-        case TNDateFormatTypeDefault:
+        case ZJDateFormatTypeDefault:
         {
             [self.defaultTypeDateFormatter setCalendar:calendar];
             date = [self.defaultTypeDateFormatter dateFromString:dateString];
         }
             break;
-        case TNDateFormatTypeNum:
+        case ZJDateFormatTypeNum:
         {
             [self.numTypeDateFormatter setCalendar:calendar];
             date = [self.numTypeDateFormatter dateFromString:dateString];
         }
             break;
-        case TNDateFormatTATimeStamp:
+        case ZJDateFormatTATimeStamp:
         {
             [self.taTimeStrampDateFormatter setCalendar:calendar];
             date = [self.taTimeStrampDateFormatter dateFromString:dateString];
         }
             break;
-        case TNDateFormatWeek:
+        case ZJDateFormatWeek:
         {
             [self.weekDateFormatter setCalendar:calendar];
             date = [self.weekDateFormatter dateFromString:dateString];
         }
             break;
-        case TNDateFormatBenchmark:
+        case ZJDateFormatBenchmark:
         {
             [self.benchmarkFormatter setCalendar:calendar];
             date = [self.benchmarkFormatter dateFromString:dateString];
@@ -128,17 +128,17 @@
 }
 
 //根据类型获取对应格式的日历
-- (NSCalendar *)calendarWithType:(TNCalendarFormatType)calendarType
+- (NSCalendar *)calendarWithType:(ZJCalendarFormatType)calendarType
 {
     NSCalendar *calendar;
     switch (calendarType) {
-        case TNCalendarFormatTypeJapanese:
+        case ZJCalendarFormatTypeJapanese:
             calendar = self.japaneseCalendar;
             break;
-        case TNCalendarFormatTypeBuddhist:
+        case ZJCalendarFormatTypeBuddhist:
             calendar = self.buddhistCalendar;
             break;
-        case TNCalendarFormatTypeGregorian:
+        case ZJCalendarFormatTypeGregorian:
         default:
             calendar = self.gregorianCalendar;
             break;
@@ -149,10 +149,10 @@
 // 根据NSDate获取年份、月份和星期几
 - (NSDictionary *)dictionaryOfDate:(NSDate *)date
 {
-    return [self dictionaryOfDate:date calendarType:TNCalendarFormatTypeGregorian];
+    return [self dictionaryOfDate:date calendarType:ZJCalendarFormatTypeGregorian];
 }
 
-- (NSDictionary *)dictionaryOfDate:(NSDate *)date calendarType:(TNCalendarFormatType)calendarType
+- (NSDictionary *)dictionaryOfDate:(NSDate *)date calendarType:(ZJCalendarFormatType)calendarType
 {
     NSCalendar *calendar = [self calendarWithType:calendarType];
     NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:date];

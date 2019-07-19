@@ -13,21 +13,21 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  日期类型枚举
  */
-typedef NS_ENUM(NSInteger, TNDateFormatType) {
-    TNDateFormatTypeDefault = 0,  //2014-02-03
-    TNDateFormatTypeNum,          //20140203
-    TNDateFormatTATimeStamp,      //yyyy-MM-dd HH:mm:ss
-    TNDateFormatWeek,             //Tuesday, Tue
-    TNDateFormatBenchmark         //yyyyMMddHHmmssSSS
+typedef NS_ENUM(NSInteger, ZJDateFormatType) {
+    ZJDateFormatTypeDefault = 0,  //2014-02-03
+    ZJDateFormatTypeNum,          //20140203
+    ZJDateFormatTATimeStamp,      //yyyy-MM-dd HH:mm:ss
+    ZJDateFormatWeek,             //Tuesday, Tue
+    ZJDateFormatBenchmark         //yyyyMMddHHmmssSSS
 };
 
 /**
  *  日历类型枚举
  */
-typedef NS_ENUM(NSInteger, TNCalendarFormatType) {
-    TNCalendarFormatTypeGregorian = 0,  //公历
-    TNCalendarFormatTypeJapanese,       //日本日历
-    TNCalendarFormatTypeBuddhist        //佛教日历
+typedef NS_ENUM(NSInteger, ZJCalendarFormatType) {
+    ZJCalendarFormatTypeGregorian = 0,  //公历
+    ZJCalendarFormatTypeJapanese,       //日本日历
+    ZJCalendarFormatTypeBuddhist        //佛教日历
 };
 
 
@@ -47,7 +47,7 @@ typedef NS_ENUM(NSInteger, TNCalendarFormatType) {
  *
  *  @return 日期字符串
  */
-- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(TNDateFormatType)dataFormatType;
+- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(ZJDateFormatType)dataFormatType;
 
 /**
  *  NSDate根据指定的日历格式转化为日期字符串
@@ -58,7 +58,7 @@ typedef NS_ENUM(NSInteger, TNCalendarFormatType) {
  *
  *  @return 日期字符串
  */
-- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(TNDateFormatType)dataFormatType calendarType:(TNCalendarFormatType)calendarType;
+- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(ZJDateFormatType)dataFormatType calendarType:(ZJCalendarFormatType)calendarType;
 
 
 /**
@@ -69,7 +69,7 @@ typedef NS_ENUM(NSInteger, TNCalendarFormatType) {
  *
  *  @return NSDate
  */
-- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(TNDateFormatType)dataFormatType;
+- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(ZJDateFormatType)dataFormatType;
 
 /**
  *  日期字符串根据指定的日历格式转换为NSDate
@@ -80,7 +80,7 @@ typedef NS_ENUM(NSInteger, TNCalendarFormatType) {
  *
  *  @return NSDate
  */
-- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(TNDateFormatType)dataFormatType calendarType:(TNCalendarFormatType)calendarType;
+- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(ZJDateFormatType)dataFormatType calendarType:(ZJCalendarFormatType)calendarType;
 
 
 /**
@@ -104,7 +104,7 @@ typedef NS_ENUM(NSInteger, TNCalendarFormatType) {
  *                     @"month": @([components month]),
  *                     @"day":   @([components day]),};
  */
-- (NSDictionary *)dictionaryOfDate:(NSDate *)date calendarType:(TNCalendarFormatType)calendarType;
+- (NSDictionary *)dictionaryOfDate:(NSDate *)date calendarType:(ZJCalendarFormatType)calendarType;
 
 @end
 
