@@ -20,6 +20,7 @@
 		AD4AB474229D1D7000F08273 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB473229D1D7000F08273 /* UIView+Positioning.m */; };
 		AD69084E22A129E900860779 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = AD69084D22A129E900860779 /* UIView+Toast.m */; };
 		AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD698113229E207400435E03 /* UIColor+ZJExtension.m */; };
+		AD69AEFB22E19CA2009E5824 /* ZJDateFormatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD69AEFA22E19CA2009E5824 /* ZJDateFormatHelper.m */; };
 		AD703FCE22CB595E00AC18D3 /* NSString+ZJHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = AD703FCD22CB595E00AC18D3 /* NSString+ZJHtml.m */; };
 		AD703FD122CB59CD00AC18D3 /* NSTimer+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD703FD022CB59CD00AC18D3 /* NSTimer+ZJExtension.m */; };
 		AD7094EE22BA2F05009F4FA2 /* NSAttributedString+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7094ED22BA2F05009F4FA2 /* NSAttributedString+ZJExtension.m */; };
@@ -74,6 +75,8 @@
 		AD69084D22A129E900860779 /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		AD698112229E207400435E03 /* UIColor+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZJExtension.h"; sourceTree = "<group>"; };
 		AD698113229E207400435E03 /* UIColor+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZJExtension.m"; sourceTree = "<group>"; };
+		AD69AEF922E19CA2009E5824 /* ZJDateFormatHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJDateFormatHelper.h; sourceTree = "<group>"; };
+		AD69AEFA22E19CA2009E5824 /* ZJDateFormatHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJDateFormatHelper.m; sourceTree = "<group>"; };
 		AD703FCC22CB595E00AC18D3 /* NSString+ZJHtml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZJHtml.h"; sourceTree = "<group>"; };
 		AD703FCD22CB595E00AC18D3 /* NSString+ZJHtml.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZJHtml.m"; sourceTree = "<group>"; };
 		AD703FCF22CB59CD00AC18D3 /* NSTimer+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+ZJExtension.h"; sourceTree = "<group>"; };
@@ -142,6 +145,7 @@
 		AD4AB43E229D1C5B00F08273 /* ZJTool */ = {
 			isa = PBXGroup;
 			children = (
+				AD69AEF522E19B48009E5824 /* tool */,
 				ADB3B8E422D5DE6700037C78 /* ZJ_Dimens_h.h */,
 				ADB3B8E222D5DBC600037C78 /* ZJ_UtilsMacro_h.h */,
 				ADA2612F22B8E1E000D65FF9 /* Foundation */,
@@ -196,6 +200,15 @@
 				ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AD69AEF522E19B48009E5824 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				AD69AEF922E19CA2009E5824 /* ZJDateFormatHelper.h */,
+				AD69AEFA22E19CA2009E5824 /* ZJDateFormatHelper.m */,
+			);
+			path = tool;
 			sourceTree = "<group>";
 		};
 		ADA2612F22B8E1E000D65FF9 /* Foundation */ = {
@@ -360,6 +373,7 @@
 				AD4AB441229D1C5B00F08273 /* AppDelegate.m in Sources */,
 				AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */,
 				AD703FCE22CB595E00AC18D3 /* NSString+ZJHtml.m in Sources */,
+				AD69AEFB22E19CA2009E5824 /* ZJDateFormatHelper.m in Sources */,
 				AD4507F522BCBA3B00DAD5EA /* NSData+ZJExtension.m in Sources */,
 				AD923C7122B3379C006E7CA6 /* UIAlertView+ZJExtensions.m in Sources */,
 				AD08BAD722D31EF900C5E2FC /* NSString+ZJExtension.m in Sources */,
