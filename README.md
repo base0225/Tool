@@ -147,5 +147,17 @@
     (9)- (NSInteger)convertToInt:(NSString*)strtemp;
     (10)- (void)trimCharactersInSet:(NSCharacterSet *)aCharacterSet;
     
-十三、增加通用宏定义（系统版本、颜色、字号）、尺寸宏定义    
+   13、增加通用宏定义（系统版本、颜色、字号）、尺寸宏定义    
+     
+   14、ZJDateFormatHelper
+
+    (1)+ (ZJDateFormatHelper *)sharedInstance;
+    (2)- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(ZJDateFormatType)dataFormatType;
+    (3)- (NSString *)stringOfDate:(NSDate *)date dateFormatType:(ZJDateFormatType)dataFormatType calendarType: 
+       (ZJCalendarFormatType)calendarType;
+    (4)- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(ZJDateFormatType)dataFormatType;
+    (5)- (NSDate *)dateFromString:(NSString *)dateString dateFormatType:(ZJDateFormatType)dataFormatType 
+       calendarType:(ZJCalendarFormatType)calendarType;
+    (6)- (NSDictionary *)dictionaryOfDate:(NSDate *)date;
+    (7)- (NSDictionary *)dictionaryOfDate:(NSDate *)date calendarType:(ZJCalendarFormatType)calendarType; 
     
