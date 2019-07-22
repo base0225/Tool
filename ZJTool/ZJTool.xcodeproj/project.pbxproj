@@ -28,6 +28,7 @@
 		AD923C6E22B33516006E7CA6 /* UILabel+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923C6D22B33516006E7CA6 /* UILabel+ZJExtension.m */; };
 		AD923C7122B3379C006E7CA6 /* UIAlertView+ZJExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */; };
 		ADA2613222B8E21400D65FF9 /* NSArray+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA2613122B8E21400D65FF9 /* NSArray+ZJExtension.m */; };
+		ADC80AE722E5AA3800C7C485 /* NSDictionary+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */; };
 		ADDEFB1622DDB37800316590 /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,8 @@
 		ADA2613122B8E21400D65FF9 /* NSArray+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZJExtension.m"; sourceTree = "<group>"; };
 		ADB3B8E222D5DBC600037C78 /* ZJ_UtilsMacro_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_UtilsMacro_h.h; sourceTree = "<group>"; };
 		ADB3B8E422D5DE6700037C78 /* ZJ_Dimens_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_Dimens_h.h; sourceTree = "<group>"; };
+		ADC80AE522E5AA3800C7C485 /* NSDictionary+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZJExtension.h"; sourceTree = "<group>"; };
+		ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZJExtension.m"; sourceTree = "<group>"; };
 		ADDEFB1422DDB37800316590 /* XTOnePixelLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTOnePixelLine.h; sourceTree = "<group>"; };
 		ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTOnePixelLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +229,8 @@
 				AD703FCD22CB595E00AC18D3 /* NSString+ZJHtml.m */,
 				AD703FCF22CB59CD00AC18D3 /* NSTimer+ZJExtension.h */,
 				AD703FD022CB59CD00AC18D3 /* NSTimer+ZJExtension.m */,
+				ADC80AE522E5AA3800C7C485 /* NSDictionary+ZJExtension.h */,
+				ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 				AD4AB474229D1D7000F08273 /* UIView+Positioning.m in Sources */,
 				AD4AB441229D1C5B00F08273 /* AppDelegate.m in Sources */,
 				AD698114229E207400435E03 /* UIColor+ZJExtension.m in Sources */,
+				ADC80AE722E5AA3800C7C485 /* NSDictionary+ZJExtension.m in Sources */,
 				AD703FCE22CB595E00AC18D3 /* NSString+ZJHtml.m in Sources */,
 				AD69AEFB22E19CA2009E5824 /* ZJDateFormatHelper.m in Sources */,
 				AD4507F522BCBA3B00DAD5EA /* NSData+ZJExtension.m in Sources */,
