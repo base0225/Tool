@@ -161,3 +161,25 @@
     (6)- (NSDictionary *)dictionaryOfDate:(NSDate *)date;
     (7)- (NSDictionary *)dictionaryOfDate:(NSDate *)date calendarType:(ZJCalendarFormatType)calendarType; 
     
+   15、NSDate+ZJExtension
+   
+    (1) - (NSInteger)zj_day;
+    (2)- (NSString *)zj_weekDayString;
+    (3)- (NSInteger)zj_month;
+    (4)- (NSInteger)zj_year;
+    (5)- (NSInteger)zj_hour;
+    (6)- (NSInteger)zj_minute;
+    (7)- (NSInteger)zj_second;
+    (8)- (NSDate *)zj_dateByAddingDay:(NSInteger)days;
+    (9)- (NSDate *)zj_dateByAddingMonth:(NSInteger)months;
+    (10)- (NSDate *)zj_dateByAddingMinute:(NSInteger)minute;
+    (11)+ (long long)zj_dateStampFrom1970;
+    (12)+ (NSDate *)zj_dateFromNormalDateString:(NSString *)dateString;
+    (13)+ (NSDate *)zj_dateFromDateString:(NSString *)dateString withFormat:(NSString *)dateFormat;
+    (14)- (NSString *)zj_stringFromNormalDate;
+    (15)- (NSString *)zj_stringFromDateWithFormat:(NSString *)dateFormat;
+    (16)- (BOOL)zj_isEarlierThan:(NSDate *)date;
+    (17)- (BOOL)zj_isEarlierThanOrEqualTo:(NSDate *)date;
+    (18)- (BOOL)zj_isLaterThan:(NSDate *)date;
+    (19)- (BOOL)zj_isLaterThanOrEqualTo:(NSDate *)date;
+    
