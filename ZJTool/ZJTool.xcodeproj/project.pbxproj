@@ -28,6 +28,7 @@
 		AD923C6E22B33516006E7CA6 /* UILabel+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923C6D22B33516006E7CA6 /* UILabel+ZJExtension.m */; };
 		AD923C7122B3379C006E7CA6 /* UIAlertView+ZJExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */; };
 		ADA2613222B8E21400D65FF9 /* NSArray+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA2613122B8E21400D65FF9 /* NSArray+ZJExtension.m */; };
+		ADBFF98822FACC2700B31FEF /* NSDate+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBFF98722FACC2700B31FEF /* NSDate+ZJExtension.m */; };
 		ADC80AE722E5AA3800C7C485 /* NSDictionary+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */; };
 		ADDEFB1622DDB37800316590 /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,8 @@
 		ADA2613122B8E21400D65FF9 /* NSArray+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZJExtension.m"; sourceTree = "<group>"; };
 		ADB3B8E222D5DBC600037C78 /* ZJ_UtilsMacro_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_UtilsMacro_h.h; sourceTree = "<group>"; };
 		ADB3B8E422D5DE6700037C78 /* ZJ_Dimens_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_Dimens_h.h; sourceTree = "<group>"; };
+		ADBFF98622FACC2700B31FEF /* NSDate+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZJExtension.h"; sourceTree = "<group>"; };
+		ADBFF98722FACC2700B31FEF /* NSDate+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZJExtension.m"; sourceTree = "<group>"; };
 		ADC80AE522E5AA3800C7C485 /* NSDictionary+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZJExtension.h"; sourceTree = "<group>"; };
 		ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZJExtension.m"; sourceTree = "<group>"; };
 		ADDEFB1422DDB37800316590 /* XTOnePixelLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTOnePixelLine.h; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 				AD703FD022CB59CD00AC18D3 /* NSTimer+ZJExtension.m */,
 				ADC80AE522E5AA3800C7C485 /* NSDictionary+ZJExtension.h */,
 				ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */,
+				ADBFF98622FACC2700B31FEF /* NSDate+ZJExtension.h */,
+				ADBFF98722FACC2700B31FEF /* NSDate+ZJExtension.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -370,6 +375,7 @@
 				AD4AB444229D1C5B00F08273 /* ViewController.m in Sources */,
 				ADDEFB1622DDB37800316590 /* XTOnePixelLine.m in Sources */,
 				AD923C6E22B33516006E7CA6 /* UILabel+ZJExtension.m in Sources */,
+				ADBFF98822FACC2700B31FEF /* NSDate+ZJExtension.m in Sources */,
 				AD4AB44F229D1C5C00F08273 /* main.m in Sources */,
 				AD75275F22AE051E00FB8021 /* UIImage+ZJExtension.m in Sources */,
 				AD703FD122CB59CD00AC18D3 /* NSTimer+ZJExtension.m in Sources */,
