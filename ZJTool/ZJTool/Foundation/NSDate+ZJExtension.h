@@ -156,7 +156,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 是否晚于
  */
-- (BOOL)tn_isLaterThan:(NSDate *)date;
+- (BOOL)zj_isLaterThan:(NSDate *)date;
 
 /**
  *  当前日期是否晚于或者等于指定日期
@@ -165,7 +165,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 是否晚于或者等于
  */
-- (BOOL)tn_isLaterThanOrEqualTo:(NSDate *)date;
+- (BOOL)zj_isLaterThanOrEqualTo:(NSDate *)date;
 
 @end
 
