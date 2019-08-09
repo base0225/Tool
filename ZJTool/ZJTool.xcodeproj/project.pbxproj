@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD08BAD722D31EF900C5E2FC /* NSString+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08BAD622D31EF900C5E2FC /* NSString+ZJExtension.m */; };
+		AD3EF99622FD69DF00066E37 /* UITextField+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF99522FD69DF00066E37 /* UITextField+ZJExtension.m */; };
 		AD4507F522BCBA3B00DAD5EA /* NSData+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4507F422BCBA3B00DAD5EA /* NSData+ZJExtension.m */; };
 		AD4AB441229D1C5B00F08273 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB440229D1C5B00F08273 /* AppDelegate.m */; };
 		AD4AB444229D1C5B00F08273 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4AB443229D1C5B00F08273 /* ViewController.m */; };
@@ -53,6 +54,8 @@
 /* Begin PBXFileReference section */
 		AD08BAD522D31EF900C5E2FC /* NSString+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZJExtension.h"; sourceTree = "<group>"; };
 		AD08BAD622D31EF900C5E2FC /* NSString+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZJExtension.m"; sourceTree = "<group>"; };
+		AD3EF99422FD69DF00066E37 /* UITextField+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZJExtension.h"; sourceTree = "<group>"; };
+		AD3EF99522FD69DF00066E37 /* UITextField+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZJExtension.m"; sourceTree = "<group>"; };
 		AD4507F322BCBA3B00DAD5EA /* NSData+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ZJExtension.h"; sourceTree = "<group>"; };
 		AD4507F422BCBA3B00DAD5EA /* NSData+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZJExtension.m"; sourceTree = "<group>"; };
 		AD4AB43C229D1C5B00F08273 /* ZJTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +207,8 @@
 				AD923C7022B3379C006E7CA6 /* UIAlertView+ZJExtensions.m */,
 				ADDEFB1422DDB37800316590 /* XTOnePixelLine.h */,
 				ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */,
+				AD3EF99422FD69DF00066E37 /* UITextField+ZJExtension.h */,
+				AD3EF99522FD69DF00066E37 /* UITextField+ZJExtension.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 				AD923C6E22B33516006E7CA6 /* UILabel+ZJExtension.m in Sources */,
 				ADBFF98822FACC2700B31FEF /* NSDate+ZJExtension.m in Sources */,
 				AD4AB44F229D1C5C00F08273 /* main.m in Sources */,
+				AD3EF99622FD69DF00066E37 /* UITextField+ZJExtension.m in Sources */,
 				AD75275F22AE051E00FB8021 /* UIImage+ZJExtension.m in Sources */,
 				AD703FD122CB59CD00AC18D3 /* NSTimer+ZJExtension.m in Sources */,
 				AD7094EE22BA2F05009F4FA2 /* NSAttributedString+ZJExtension.m in Sources */,
