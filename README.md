@@ -183,3 +183,7 @@
     (18)- (BOOL)zj_isLaterThan:(NSDate *)date;
     (19)- (BOOL)zj_isLaterThanOrEqualTo:(NSDate *)date;
     
+   16、UITextField+ZJExtension
+   
+    (1)- (void)zj_setPlaceholderColor:(UIColor *)color;
+    (2)- (void)zj_setPlaceholderFont:(UIFont *)font;
