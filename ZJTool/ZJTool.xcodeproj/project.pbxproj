@@ -32,6 +32,7 @@
 		ADBFF98822FACC2700B31FEF /* NSDate+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBFF98722FACC2700B31FEF /* NSDate+ZJExtension.m */; };
 		ADC80AE722E5AA3800C7C485 /* NSDictionary+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */; };
 		ADDEFB1622DDB37800316590 /* XTOnePixelLine.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */; };
+		ADFC9284230FEEEC00EF7F84 /* ZJFileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFC9283230FEEEC00EF7F84 /* ZJFileCacheManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZJExtension.m"; sourceTree = "<group>"; };
 		ADDEFB1422DDB37800316590 /* XTOnePixelLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTOnePixelLine.h; sourceTree = "<group>"; };
 		ADDEFB1522DDB37800316590 /* XTOnePixelLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTOnePixelLine.m; sourceTree = "<group>"; };
+		ADFC9282230FEEEC00EF7F84 /* ZJFileCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJFileCacheManager.h; sourceTree = "<group>"; };
+		ADFC9283230FEEEC00EF7F84 /* ZJFileCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJFileCacheManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +244,8 @@
 				ADC80AE622E5AA3800C7C485 /* NSDictionary+ZJExtension.m */,
 				ADBFF98622FACC2700B31FEF /* NSDate+ZJExtension.h */,
 				ADBFF98722FACC2700B31FEF /* NSDate+ZJExtension.m */,
+				ADFC9282230FEEEC00EF7F84 /* ZJFileCacheManager.h */,
+				ADFC9283230FEEEC00EF7F84 /* ZJFileCacheManager.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				AD923C6E22B33516006E7CA6 /* UILabel+ZJExtension.m in Sources */,
 				ADBFF98822FACC2700B31FEF /* NSDate+ZJExtension.m in Sources */,
 				AD4AB44F229D1C5C00F08273 /* main.m in Sources */,
+				ADFC9284230FEEEC00EF7F84 /* ZJFileCacheManager.m in Sources */,
 				AD3EF99622FD69DF00066E37 /* UITextField+ZJExtension.m in Sources */,
 				AD75275F22AE051E00FB8021 /* UIImage+ZJExtension.m in Sources */,
 				AD703FD122CB59CD00AC18D3 /* NSTimer+ZJExtension.m in Sources */,
