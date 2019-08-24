@@ -187,3 +187,9 @@
    
     (1)- (void)zj_setPlaceholderColor:(UIColor *)color;
     (2)- (void)zj_setPlaceholderFont:(UIFont *)font;
+    
+   17、 ZJFileCacheManger
+     
+    (1)+ (NSString *)fileCachePath:(ZJFileCacheGrade)gradeType business:(ZJFileCacheBusinessType)business;
+    (2)+ (void)clearFileCache:(ZJFileCacheGrade)gradeType complete:(void(^)(BOOL complete))complete;
+   
