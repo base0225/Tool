@@ -66,6 +66,34 @@
     return [super canPerformAction:action withSender:sender];
 }
 
+- (void)zj_configDoneWithWidth:(CGFloat)width
+{
+    self.inputAccessoryView = [self zj_doneViewWithWidth:width];
+}
+
+- (UIView *)zj_doneViewWithWidth:(CGFloat)width
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 375, 43.0f)];
+    view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *doneButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80.0f, 43.0f)];
+    [doneButton setTitle:@"完成" forState:UIControlStateNormal];
+    [doneButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    doneButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+//    doneButton.right = view.width;
+    doneButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+    doneButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+    doneButton.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 9.0f);
+    [doneButton addTarget:self action:@selector(tnh_doneClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:doneButton];
+    
+    return view;
+}
+
+- (void)tnh_doneClicked:(id)sender
+{
+    [self endEditing:YES];
+}
 
 
 @end

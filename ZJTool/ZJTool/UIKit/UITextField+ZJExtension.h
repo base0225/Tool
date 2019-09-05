@@ -28,6 +28,8 @@ typedef NS_OPTIONS(NSInteger, ZJMenuItemDisabledType) {
 /// 设置placeholder 字体
 - (void)zj_setPlaceholderFont:(UIFont *)font;
 
+- (void)zj_configDoneWithWidth:(CGFloat)width;
+
 /// 禁用menu item类型 [如果是密码输入框, 默认禁用所有]
 @property (nonatomic, assign) ZJMenuItemDisabledType menuItemDisabledType;
 
