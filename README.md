@@ -192,4 +192,37 @@
      
     (1)+ (NSString *)fileCachePath:(ZJFileCacheGrade)gradeType business:(ZJFileCacheBusinessType)business;
     (2)+ (void)clearFileCache:(ZJFileCacheGrade)gradeType complete:(void(^)(BOOL complete))complete;
+    
+   18、NSDate + ZJCategory
+    
+    (1)+ (NSDate *) yesterday;
+    (2)+ (NSDate*) yesterdayWithTimeZone:(NSTimeZone*)timeZone;
+    (3)+ (NSDate*) tomorrow;
+    (4)+ (NSDate*) tomorrowWithTimeZone:(NSTimeZone*)timeZone;
+    (5)+ (NSDate *) month;
+    (6)+ (NSDate*) monthWithTimeZone:(NSTimeZone*)timeZone;
+    (7)- (NSDate*) monthDate;
+    (8)- (NSDate *) monthDateWithTimeZone:(NSTimeZone*)timeZone;
+    (9)- (BOOL) isSameDay:(NSDate*)anotherDate;
+    (10)- (BOOL) isSameDay:(NSDate*)anotherDate timeZone:(NSTimeZone*)timeZone;
+    (11)- (NSInteger) monthsBetweenDate:(NSDate *)date;
+    (12)- (NSInteger) monthsBetweenDate:(NSDate *)toDate timeZone:(NSTimeZone*)timeZone;
+    (13)- (NSInteger) daysBetweenDate:(NSDate*)date;
+    (14)- (BOOL) isToday;
+    (15)- (BOOL) isTodayWithTimeZone:(NSTimeZone*)timeZone;
+    (16)- (BOOL) isTomorrow;
+    (17)- (BOOL) isTomorrowWithTimeZone:(NSTimeZone*)timeZone;
+    (18)- (BOOL) isYesterday;
+    (19)- (BOOL) isYesterdayWithTimeZone:(NSTimeZone*)timeZone;
+    (20)- (NSString *) monthYearString;
+    (21)- (NSString *) monthYearStringWithTimeZone:(NSTimeZone*)timeZone;
+    (22)- (NSString *) monthString;
+    (23)- (NSString*) monthStringWithTimeZone:(NSTimeZone*)timeZone;
+    (24)- (NSString *) yearString;
+    (25)- (NSString*) yearStringWithTimeZone:(NSTimeZone*)timeZone;
+    (26)+ (NSDate*) dateWithDateComponents:(NSDateComponents*)components;
+    (28)- (NSDateComponents*) dateComponentsWithTimeZone:(NSTimeZone*)timeZone;
+    (29)- (NSDate *) dateByAddingDays:(NSUInteger)days;
+    (30)+ (NSDate *) dateWithDatePart:(NSDate *)aDate andTimePart:(NSDate *)aTime;
+    
    
